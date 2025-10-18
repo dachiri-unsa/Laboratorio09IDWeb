@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto; /* header, nav, main, footer */
+}
+header, nav, footer {
+    padding: 15px;
+    text-align: center;
+}
+header, footer {
+    background-color: #88f;
+}
+nav {
+    background-color: #afa;
+}
+main {
+    background-color: #ccf;
+    display: flex;
+    gap: 16px
+}
+article, aside {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+article {
+    flex: 3;
+    background-color: #ddd;
+    border: 3px solid #88f;
+}
+aside {
+    flex: 1;
+    background-color: #afa;
+}
